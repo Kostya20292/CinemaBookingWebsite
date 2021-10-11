@@ -13,6 +13,10 @@ body {
   background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url("../img/bg.jpg") no-repeat center top / cover;
 }
 
+option {
+  color: #000;
+}
+
 .navbar{
   display: flex;
   align-items: center;
@@ -179,4 +183,88 @@ body {
 
 .select__cinema {
   min-width: 470px;
+}
+
+.scheme {
+  background: rgba(36, 36, 36, 0.18);
+  border-radius: 10px;
+  margin: 63px auto 40px;
+}
+
+.scheme path:not(.light) {
+  fill:rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.scheme path:not(.light):hover {
+  fill:rgba(255, 255, 255, 0.5);
+}
+
+.scheme path.booked,
+.scheme path.booked:hover {
+  fill:rgba(255, 255, 255, 0.05);
+  cursor: not-allowed;
+}
+
+.scheme path.active,
+.scheme path.active:hover {
+  fill:#FE8E05;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  max-width: 1024px;
+  margin: auto;
+  padding: 22px 0 38px;
+}
+
+.legend__label {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.legend svg {
+  margin-right: 15px;
+}
+
+.legend__text,
+.legend__text-booked {
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.legend__text-active {
+  color: #FE8E05;
+}
+
+.price {
+  padding: 20px 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price__label {
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.price__tag {
+  font-size: 52px;
+  line-height: 61px;
+}
+
+.button {
+  background: #FE8E05;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  padding: 24px 52px;
+  text-decoration: none;
 }
